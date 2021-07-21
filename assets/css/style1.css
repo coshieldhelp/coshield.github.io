@@ -14,11 +14,11 @@ body {
 }
 
 a {
-  color: #111827;
+  color: #e5e7eb;
 }
 
 a:hover {
-  color: #00cc95;
+  color: #d1d5db;
   text-decoration: none;
 }
 
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .logo {
   overflow: hidden;
   padding: 16px 30px 12px 30px;
-  background: #111827;
+  background: #4b5563;
 }
 
 #header .logo h1 {
@@ -137,10 +137,10 @@ h1, h2, h3, h4, h5, h6 {
   #header {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     top: 0;
-    background: #111827;
+    background: #4b5563;
   }
   #header.header-scrolled, #header .header-container {
-    background: #111827;
+    background: #4b5563;
   }
   #header .logo h1 {
     font-size: 24px;
@@ -176,12 +176,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #111827;
+  color: #4b5563;
   text-decoration: none;
 }
 
 .nav-menu .get-started a {
-  background: #111827;
+  background: #4b5563;
   color: #fff;
   border-radius: 50px;
   margin: 0 15px;
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #111827;
+  color: #4b5563;
 }
 
 .nav-menu .drop-down > a:after {
@@ -321,7 +321,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #111827;
+  color: #4b5563;
   text-decoration: none;
 }
 
@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav .get-started a {
-  background: #111827;
+  background: #4b5563;
   color: #fff;
   border-radius: 50px;
   margin: 0 15px;
@@ -339,7 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav .get-started a:hover {
-  background: #00c28e;
+  background: #111827;
   color: #fff;
 }
 
@@ -507,7 +507,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #111827;
+  background: #4b5563;
   bottom: 0;
   left: 0;
 }
