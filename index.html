@@ -367,7 +367,7 @@ section {
               </div>
             </div>
 
-            <form action="https://formsubmit.co/coshieldhelp@gmail.com" method="post" role="form" class="php-email-form mt-4">
+            <form action="javascript:sendmail()" method="post" role="form" class="php-email-form mt-4">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -378,9 +378,11 @@ section {
                   <div class="validate"></div>
                 </div>
               </div>
-              
-			  <input type="hidden" name="_next" value="https://coshieldhelp.github.io">
-			  
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+			  			  
               <div class="form-group">
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validate"></div>
@@ -447,6 +449,50 @@ section {
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!--smtp..............-->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+	 
+<!--smtp form javascript-->
+  <script>
+  
+	function sendmail(){
+	
+	var name = $('#name').val();
+	var email = $('#email').val();
+	var subject = $('#subject').val();
+	var message = $('#message').val();
+	  
+	  // var body = $('#body').val();
+	
+	var Body='name: '+name+'<br>email: '+email+'<br>sbject: '+subject+'<br>message: '+message;
+	
+	//console.log(name, phone, email, message);
+	
+	}
+  
+	
+	Email.send({
+    Host : "smtp.gmail.com",
+    Username : "coshieldsender@gmail.com",
+    Password : "oc437@gh4",
+    To : 'coshieldhelp@gmail.com',
+    From : "coshieldsender@gmail.com",
+    Subject : "New mail from: "+name,
+    Body : Body
+}).then(
+  message =>{
+          
+		  if(message=='OK'){
+		    alert('Your email has been sent. Thank you for connecting.');
+			}
+			else{
+			  console.error(message);
+			  alert('There is error at sending message. Try later.')
+			}
+    }
+);
+  </script>
+	 
 
 </body>
 
