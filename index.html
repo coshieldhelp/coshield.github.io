@@ -35,6 +35,10 @@
   <title>COSHIELD</title>
   <link rel="shortcut icon" type="image/png" href="https://1.bp.blogspot.com/-Jmeo1GxqKXY/YJ9vwwDxlVI/AAAAAAAAAd8/sUw7poE1NnE8EYfJdQQfZnW2KeD9OwfEgCLcBGAsYHQ/s1200/kovid.png">
     
+<!--smtp js-->	
+	
+	
+	
       
  <!--tailwind css-->    
 
@@ -58,7 +62,7 @@
   
   
 
-<link rel="me" href="https://www.blogger.com/profile/16285146575387164995" />
+
 
 
 
@@ -367,7 +371,36 @@ section {
               </div>
             </div>
 
-            
+            <form action="https://script.google.com/macros/s/AKfycbzhvkXLAtUVC5LRE7TQaM2yGaG71aX2Cum_ZqPw73ca2vOy55zjaTEDvNquBsBMOvdVnA/exec" method="post" role="form" class="php-email-form mt-4">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Your message has been sent. Thank you!</div>
+                <div class="error-message"></div>
+                
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
     </section><!-- End Contact Section -->	
 	
 	
@@ -418,10 +451,14 @@ section {
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+  
 
- 
 
-	 
+
+
+
+
 
 </body>
 
