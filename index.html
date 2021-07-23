@@ -136,8 +136,8 @@
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">645</span>
-            <p>Views</p>
+            <span id="count" data-toggle="counter-up">0</span>
+            <p>Visitors</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
@@ -453,7 +453,24 @@ section {
   <script src="assets/js/main.js"></script>
   
   
+  <script>
+	const countEl = document.getElementById('count');
 
+updateVisitCount();
+
+function updateVisitCount() {
+	fetch('https://api.countapi.xyz/update/coshieldhelp.github.io/aniket/?amount=1')
+	.then(res => res.json())
+	.then(res => {
+		countEl.innerHTML = res.value;
+	})
+
+}
+  
+
+  
+  
+  </script>
 
 
 
