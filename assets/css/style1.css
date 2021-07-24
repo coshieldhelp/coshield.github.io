@@ -1066,7 +1066,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact
+# Contact us
 --------------------------------------------------------------*/
 .contact .info {
   padding: 30px;
@@ -1152,7 +1152,7 @@ section {
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .php-email-form .sent-message:before {
   content: "";
   display: inline-block;
   border-radius: 50%;

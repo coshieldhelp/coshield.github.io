@@ -896,6 +896,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
   box-sizing: content-box;
+  border-radius: 5%;
   padding: 30px 30px 0 30px;
   margin: 30px 15px;
   text-align: center;
@@ -962,7 +963,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #009970 !important;
+  background-color: #111827 !important;
 }
 
 @media (max-width: 767px) {
@@ -1066,7 +1067,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact
+# Contact us
 --------------------------------------------------------------*/
 .contact .info {
   padding: 30px;
@@ -1152,7 +1153,7 @@ section {
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .php-email-form .sent-message:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
