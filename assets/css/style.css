@@ -444,10 +444,10 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100%;
+  height: 80vh;
   background: url("../img/covid.jpg") center center;
   background-size: cover;
-  position: absolute;
+  position: relative;
 }
 
 #hero .container {
